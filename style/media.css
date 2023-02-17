@@ -1,0 +1,129 @@
+@media screen and (max-width:1024px){
+
+    .container .abdulaziz .navbar .left{
+        width: 8%;
+    }
+    .container .abdulaziz .navbar .meddil{
+        width: 35%;
+    }
+}
+@media screen and (max-width:900px){
+    .container .navbar .right .ruyxat{
+        width: 50%;
+        /* border: 1px solid red; */
+    }
+    .container .abdulaziz .footers .content .searchs{
+        width: 90%;
+        height: 50px;
+    }
+    .container .navbar .right .icon{
+        gap: 15px;
+    }
+    .container .abdulaziz .burgers{
+        display: flex;
+    }
+    .container .abdulaziz .navbar .meddil{
+        width: 0%;
+        position: relative;
+        z-index: -1;
+    }
+    .container .abdulaziz .navlink .left{
+        width: 100%;
+        justify-content: start;
+    }
+    .container .abdulaziz .navlink .meddil{
+        width: 100%;
+        justify-content: start;
+    }
+    .container .abdulaziz .navlink{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container .abdulaziz .navlink .right{
+        width: 100%;
+        justify-content: start;
+    }
+    .container .abdulaziz .navbar .meddil ul{
+        display: none;
+        position: absolute;
+    }
+    .container .navbar .right{
+        top: 0;
+        right: 0;
+        height: 10vh;
+        position: absolute;
+        z-index: 5;
+    }
+    .container .navbar .right{
+        padding: 0px 20px;
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width:425px){
+    .container .navbar .right{
+        width: 80%;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        gap: px;
+    }
+    
+    .container .abdulaziz .navbar{
+        display: flex;
+        justify-content: none;
+        /* gap: 50px; */
+        padding: 0px;
+        /* border: 1px solid red; */
+    }
+    .container .abdulaziz .head .head_content .sana{
+        font-size: 80px;
+    }
+    .container .abdulaziz .head .head_content .book{
+        font-size: 60px;
+    }
+    .container .abdulaziz .head .head_content .btn1{
+        width: 140px;
+        height: 40px;
+    }
+    .container .abdulaziz .boxs{
+        margin-top: 100px;
+    }
+    .container .abdulaziz .boxs .img_boxs .box1{
+        margin-top: 30px;
+    }
+    .container .abdulaziz .products .product_menu .later{
+        font-size: 35px;
+    }
+    .container .abdulaziz .look_book .look_right .fashion{
+        font-size: 80px;
+    }
+    .container .abdulaziz .footers .content .search_menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .abdulaziz .bottom .bottom_navbar{
+        width: 100%;
+    }
+    .container .abdulaziz .bottom .bottom_navbar ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 320px){
+    .container .navbar .right .ruyxat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10 px;
+    }
+}

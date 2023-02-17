@@ -1,0 +1,665 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.container .daler{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navbar qismi Boshlandi */
+.container .navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.container .navbar .left {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .navbar .left img {
+    height: 50%;
+}
+
+.container .navbar .meddil {
+    width: 30%;
+    height: 100%;
+}
+
+.container .navbar .meddil ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .navbar .meddil ul li a {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1E1E1E;
+}
+
+/* ung Tomon boshlandi */
+.container .navbar .right {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container .navbar .right .ruyxat {
+    width: 30%;
+    height: 100%;
+}
+
+.container .navbar .right .icon {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 22px;
+    cursor: pointer;
+    gap: 20px   ;
+
+}
+
+.container .navbar .right .icon img {
+    width: 20px;
+    height: 60%;
+}
+
+.container .navbar .right .ruyxat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .navbar .right .ruyxat a {
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1E1E1E;
+
+}
+
+.container .navbar .right .ruyxat .sign {
+    color: #838383;
+}
+.container .burgers{
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color:#4C4C4C;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 5px;
+    /* overflow: hidden; */
+    position: relative;
+    display: none;
+}
+.container .burgers .burger{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1px;
+}
+.container .burgers .burger i{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    color: white;
+}
+.container .burgers .burger i:hover ~ .menu{
+    /* width: 100%; */
+    top: 0%;
+    right: 0%;
+}
+.container .burgers .burger .menu{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    top: 0px;
+    right: -205%;
+    backdrop-filter: blur(10px);
+    transition: .5s all;
+    z-index: 10px;
+
+}
+.container .burgers .burger .menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+.container .burgers .burger .menu ul li a{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.container .daler .navlink {
+    width: 100%;
+    height: auto;
+    background-color: #B0BCC2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+}
+
+.container .daler .navlink .logo1 {
+    /* border: #1E1E1E solid 1px; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .daler .navlink .logo1 img {
+    width: 45px;
+    height: 30px;
+    /* align-items: center; */
+    color: #FFFFFF;
+
+}
+
+.container .daler .navlink .logo1 p {
+    width: 65%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 50px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container .daler .navlink .logo2 {
+    /* border: #1E1E1E solid 1px; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.container .daler .navlink .logo2 img {
+    width: 35px;
+    height: 30px;
+    color: #FFFFFF;
+    object-fit: cover;
+
+}
+
+.container .daler .navlink .logo2 p {
+    width: 65%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.container .daler .navlink .logo4 {
+    /* border: transparent solid 1px; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .daler .navlink .logo4 img {
+    width: 40px;
+    height: 27px;
+    color: #FFFFFF;
+    object-fit: cover;
+}
+
+.container .daler .navlink .logo4 p {
+    width: 65%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 60px;
+    color: #FFFFFF;
+    /* font-family: Montserrat; */
+
+}
+
+.container .daler .content {
+    width: 95%;
+    height: auto;
+    /* background-color: royalblue; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
+.container .daler .content .box_2 {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+
+.container .daler .content .box_2 .you {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.container .daler .content .box_2 .box_3 {
+    width: 100%;
+    height: auto;
+    border-top: 2px solid #838383;
+    border-bottom: 2px solid #838383;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: red;    */
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    padding: 0px 130px;
+}
+.container .daler .content .box_2 .box_3 form{
+    margin: auto;
+}
+.container .daler .content .box_2 .box_3 .box_4{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.container .daler .content .box_2 .box_3 .pay{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+.container .daler .content .box_2 .box_3 .right .right_box{
+    width: 95%;
+    height: 40px;
+    /* border: 1px solid red;    */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 90px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .daler .box{
+    width: 85%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container .daler .box .chec{
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .daler .box img{
+    width: 600px;
+    height: 100%;
+}
+.container .daler .content .registration{
+    width: 85%;
+    height: auto;
+    /* background-color: yellow; */
+    margin-top: 20px;
+}
+.container .daler .content .registration .registr .urta_content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0px;
+    /* border: 1px solid red; */
+}
+.container .daler .content .registration .registr .pay{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container .daler .content .registration .registr .pastgi_content{
+    width: 100%;
+    height: auto;
+   border-top: 2px solid #7B7B7B;
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* align-items: center; */
+}
+.container .daler .content .registration .registr .pastgi_content .boxs{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.container .daler .content .registration .registr .pastgi_content .boxs .box{
+    width: 80%;
+    height: 30px;
+    justify-content: center;
+    gap: 10px;
+}
+.container .daler .content .registration .registr .pastgi_content button{
+    width: 90%;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px auto;
+}
+.container .daler .content .registration .registr .pastgi_content .boxs .box_2{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .daler .content .registration .registr .pastgi_content .boxs .box .card{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container .daler .content .registration .info{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .daler .content .registration  .registr{
+    width: 100%;
+    height: auto;
+   border-top: 2px solid #D0D7DB;
+   border-bottom: 2px solid #D0D7DB;
+   margin-top: 20px;
+   /* display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap; */  
+   align-items: center;
+   margin: auto;
+   gap: 40px;
+}
+.container .daler .content .registration .registr .urta_content .left{
+    width: 60%;
+    height: auto;
+    /* border: 1px solid orange; */
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.container .daler .content .registration .registr .left label{
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container .daler .content .registration .registr .left .name1{
+    width: 45%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #7B7B7B;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container .daler .content .registration .registr .left .name2{
+    width: 85%;
+    height: 30px;
+     border: none;
+    border-bottom: 2px solid #7B7B7B;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container .daler .content .registration .registr .left .name3{
+    width: 85%;
+    height: 30px;
+     border: none;
+    border-bottom: 2px solid #7B7B7B;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container .daler .content .registration .registr .urta_content .right{
+    width: 250px;
+    height: auto;
+    background-color: #F9FBFB;
+    display: flex;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.container .daler .content .registration .registr .right .content2{
+    width: 80%;
+    height: auto;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.container .daler .content .registration .registr .right .content4{
+    width: 80%;
+    height: auto;
+    border-top: 2px solid #D0D7DB;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.container .daler .content .registration .registr .right .content4 .content3{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .daler .content .registration .registr .right .content2 .content3{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .daler .content .registration .registr .right .content2 .content3 .text1{
+    font-size: 14px;
+    color: #838383;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .daler .content .registration .registr .right .content2 .content3 .text{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .daler .content .registration .registr .right .content4 .content3 .text1{
+    font-size: 14px;
+    color: #838383;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .daler .content .registration .registr .right .content4 .content3 .text{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .daler .box_3 .link{
+    width: 300px;
+    height: 40px;
+    /* border: 1px solid red; */
+    /* background-color: red; */
+}
+
+/* footers qismi Boshlandi */
+.container .daler .footers{
+    width: 100%;
+    height: auto;
+    background-color: #262626;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .daler .footers .content{
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid green; */
+
+}
+.container .daler .footers .content .searchs{
+    width: 100%;
+    height: 60px;
+    border: 2px solid #505050;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0px;
+}
+.container .daler .footers .content .searchs .btn2{
+    width: 250px;
+    height: 95%;
+    border-radius: 50px;
+    background-color: #B0BCC2;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+.container .daler .footers .content .search_menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+}
+.container .daler .footers .content .search_menu .menu1{
+    width: 190px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.container .daler .footers .content .search_menu .menu1 .us{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    height: 20px;
+}
+.container .daler .footers .content .search_menu .menu1 .menu2{
+    width: 100%;
+    height: 250px;
+}
+.container .daler .footers .content .search_menu .menu1 .menu2 ul{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.container .daler .footers .content .search_menu .menu1 .menu2 ul li a{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+/* Footers qismi Tugadi */
+/* Bottom qismi Boshlandi */
+.container .daler .bottom{
+    width: 100%;
+    height: auto;
+    background-color: #222121;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .daler .bottom .bottom_navbar{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .daler .bottom .bottom_navbar ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container .daler .bottom .bottom_navbar ul li a{
+text-transform: uppercase;
+color:#9F9FA0;
+font-size: 14px;
+
+}
+.container .daler .bottom .bottom_navbar .text_box{
+    width: 80%;
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .daler .bottom .bottom_navbar .text_box .all{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #7B7B7B;
+}
+.container .daler .bottom .bottom_navbar .text_box .all a{
+    color: blue;
+}
+

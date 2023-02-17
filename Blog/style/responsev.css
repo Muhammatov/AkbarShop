@@ -1,0 +1,73 @@
+@media screen and (max-width: 768px){
+    .container .navbar{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      
+    }
+    .container .daler .navbar .meddil{
+        display: none;
+    }
+    .container .navbar .left{
+        width: 120px;
+    }
+    .container .navbar .right{
+        width: 60%;
+    }
+    .container .navbar .right .ruyxat{
+        width: 200px;
+        flex-wrap: wrap;
+    }
+    .container .daler .navlink .logo1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .container .daler .navlink .logo2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container .daler .navlink .logo4{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container .burgers{
+        display: flex;
+    }
+    .container .daler .content .registration .registr .pastgi_content button{
+        width: 85%;
+        height: 50px;
+        font-size: 18px;
+    }
+    .container .daler .footers .content .searchs{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 425px){
+    .container .daler .box .chec{
+        font-size: 35px;
+    }
+    .container .daler .content .registration .info{
+        font-size: 25px;
+    }
+    .container .daler .footers .content .search_menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .daler .bottom .bottom_navbar{
+        width: 100%;
+    }
+    .container .daler .bottom .bottom_navbar ul{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

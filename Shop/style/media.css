@@ -1,0 +1,26 @@
+@media screen and (max-width: 1024px){
+    .container .navbar{
+        padding: 0px;
+    }
+    .container .navbar .right{
+        width: 40%;
+    }
+    .container .navbar .meddil{
+        width: 40%;
+    }
+    .container .navbar .right .ruyxat{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container .kamran .burgers{
+        display: flex;
+    }
+    .container .navbar .meddil{
+        display: none   ;
+    }
+}

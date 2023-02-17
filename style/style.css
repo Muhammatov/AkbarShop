@@ -1,0 +1,725 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+.container{
+    width: 100%;
+    height: auto;
+    /* background-color: yellow; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .abdulaziz{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    
+}
+/* Navbar qismi Boshlandi */
+.container .abdulaziz .navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.container .abdulaziz .navbar .left{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.container .abdulaziz  .navbar .left img{
+    height: 50%;
+}
+.container .abdulaziz .navbar .meddil{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+.container .abdulaziz .navbar .meddil ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+}
+.container .navbar .meddil ul li a{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1E1E1E;
+}
+/* ung Tomon boshlandi */
+.container .navbar .right{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .navbar .right .ruyxat{
+    width: 30%;
+    height: 100%;
+}
+.container .navbar .right .icon{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.container .navbar .right .icon img{
+    width: 20px;
+    height: 50%;
+}
+.container .navbar .right .ruyxat {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .navbar .right .ruyxat  a{
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1E1E1E;
+
+}
+.container .navbar .right .ruyxat .sign{
+    color: #838383;
+}
+/* Navbar qismi Tugadi */
+.container .abdulaziz .burgers{
+    width: 100%;
+    background-color: #4C4C4C;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    /* padding: 0px 15px; */
+    position: absolute;
+    /* overflow: hidden; */
+    display: none;
+}
+.container .abdulaziz .burgers .tugma{
+    width: 100px;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    padding: 0px 10px;
+    justify-content: end;
+    align-items: center;
+    /* z-index: 1000; */
+}
+.container .abdulaziz .burgers .tugma i{
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    color: #fff;
+}
+.container .abdulaziz .burgers .tugma i:active{
+    color: yellow;
+}
+.container .abdulaziz .burgers .tugma i:hover ~ .link{
+    right: 0%;
+    /* background-color: red; */
+}
+.container .abdulaziz .burgers .tugma .link{
+    width: 200px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute ;
+    right: -200%;
+    /* background-color: orange; */
+    backdrop-filter: blur(10px);
+    top: 0px;
+    transition: 1.5s all;
+    /* opacity: 0.8;     */
+    z-index: 1000;
+
+}
+.container .abdulaziz .burgers .tugma .link ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.container .abdulaziz .burgers .tugma .link ul li a{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/* Navlink qismi boshlandi */
+.container .abdulaziz .navlink{
+    width: 100%;
+    height: auto;
+    background-color: #B0BCC2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+.container .abdulaziz .navlink .left{
+    width: 26%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+.container .abdulaziz .navlink .left img{
+    width: 45px;
+}
+.container .abdulaziz .navlink .meddil img{
+    width: 40px;
+    height: 30px;
+}
+.container .abdulaziz .navlink .left .on{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .abdulaziz .navlink .meddil .on{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .abdulaziz .navlink .right .on{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .abdulaziz .navlink .meddil{
+    width: 18%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .abdulaziz .navlink .right{
+    width: 23%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Navlink qismi tugadi */
+/* Head qismi Boshlandi */
+.container .abdulaziz .head{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg-img.png) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .abdulaziz .head .head_content{
+    width: 40%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.container .abdulaziz .head .head_content .sana{
+    font-size: 110px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.container .abdulaziz .head .head_content .book{
+    font-size: 90px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.container .abdulaziz .head .head_content .btn1{
+    width: 160px;
+    height: 60px;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+/* Head qismi Tugadi */
+/* Boxs qismi Boshlandi */
+.container .abdulaziz .boxs{
+    width: 75%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+}
+/* Icons qismi tugadi */
+.container .abdulaziz .boxs .icons{
+    width: 100%;
+    height: 200px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.container .abdulaziz .boxs .icons .icon{
+    width: 30%;
+    height: 200px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .abdulaziz .boxs .icons .icon img{
+    width: 60px;
+    height: 60px;
+}
+.container .abdulaziz .boxs .icons .icon .free{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 8px;
+    
+}
+.container .abdulaziz .boxs .icons .icon .urna{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 5px;
+}
+/* Boxs Qismi Tugadi */
+/* img_boxs qismi Boshlandi */
+.container .abdulaziz .boxs .img_boxs{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 20px;
+    /* background-color: red; */
+}
+.container .abdulaziz .boxs .img_boxs .box1{
+    width: 500px;
+    height: 750px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+}
+.container .abdulaziz .boxs .img_boxs .box1 .box_top{
+    width: 100%;
+    height: 600px;
+    background: url(../img/img_1.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container .abdulaziz .boxs .img_boxs .box1 .box_top .left{
+    width: 200px;
+    height: 150px;
+    /* border: 1px solid orange; */
+}
+
+.container .abdulaziz .boxs .img_boxs .box1 .box_top .right{
+    width: 200px;
+    height: auto;
+}
+.container .abdulaziz .boxs .img_boxs .box1 .box_bottom{
+    width: 100%;
+    height: 600px;
+    background-color: orange;
+    background: url(../img/img_3.png) no-repeat center;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.container .abdulaziz .boxs .img_boxs .box1 .box_bottom .left{
+    width: 230px;
+    height: 150px;
+}
+.container .abdulaziz .boxs .img_boxs .box1 .box_bottom .right{
+    width: 200px;
+    height: 150px;
+    /* border: 1px solid orange; */
+}
+.container .abdulaziz .boxs .img_boxs .box2{
+    width: 490px;
+    height: 750px;
+    background: url(../img/img_2.png) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+}
+.container .abdulaziz .img_boxs .box1 .box_top .right .party{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container .abdulaziz .img_boxs .box1 .box_top .right .name{
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .abdulaziz .img_boxs .box1 .box_top .right .alert{
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .abdulaziz .img_boxs .box1 .box_top .right .btn2{
+    width: 140px;
+    height: 40px;
+    border: 2px solid #D0D7DB;
+    background: none;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+.container .abdulaziz .boxs .img_boxs .box1 .box_bottom .left .trend{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.container .abdulaziz .boxs .img_boxs .box1 .box_bottom .left .foot{
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 8px;
+}
+.container .abdulaziz .boxs .img_boxs .box1 .box_bottom .left .bold{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    
+}
+.container .abdulaziz .boxs .img_boxs .box2 .box{
+    width: 280px;
+    height: 150px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .abdulaziz .boxs .img_boxs .box2 .box .party{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .abdulaziz .boxs .img_boxs .box2 .box .coll{
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .abdulaziz .boxs .img_boxs .box2 .box .tren{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 8px;
+}
+/* Img_boxs qismi Tugadi */
+/* Product boshlandi */
+.container .abdulaziz .products{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .abdulaziz .products .product_menu{
+    width: 60%;
+    height: 120px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container .abdulaziz .products .product_menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+.container .abdulaziz .products .product_menu ul li a{
+    font-family: 'Montserrat', sans-serif;
+    color: #838383;
+
+}
+.container .abdulaziz .products .product_menu .later{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Product_box qismi Boshlandi */
+.container .abdulaziz .products .product_box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+}
+.container .abdulaziz .products .product_box .product1{
+    width: 243px;
+    height: 350px;
+    /* background-color: red;    */
+}
+.container .abdulaziz .products .product_box .product1 .product2{
+    width: 100%;
+    height: 85%;
+    /* background-color: yellow; */
+}
+.container .abdulaziz .products .product_box .product1 .product2 img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    position: relative;
+    background-size: 100%;
+    height: 100% 80%;
+}
+.container .abdulaziz .products .product_box .product1 .product3{
+    width: 100%;
+    height: 15%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.container .abdulaziz .products .product_box .product1 .product3 .dress{
+    color: #727272;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .abdulaziz .products .product_box .product1 .product3 .narx{
+    font-family: 'Montserrat', sans-serif;
+    color:#1E1E1E;  
+} 
+/* Product_box qismi tugadi */
+/* Look_book qismi Boshlandi */
+.container .abdulaziz .look_book{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 0px; */
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.container .abdulaziz .look_book .look_left{
+    width: 450px;
+    height: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container .abdulaziz .look_book .look_left .sana{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .abdulaziz .look_book .look_left .urna{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #787878;
+    margin-top: 20px;
+}
+.container .abdulaziz .look_book .look_left .see{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #B0BCC2;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.container .abdulaziz .look_book .look_right{
+    width: 650px;
+    height: 400px;
+   background: url(../img/img_12.png) no-repeat;
+   background-size: 100% 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+}
+.container .abdulaziz .look_book .look_right .fashion{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120px;
+    color: #ffff;
+}
+/* look_book qismi Tugadi */
+/* Reklama qismi Boshlandi */
+.container .abdulaziz .reklama{
+    width: 89%;
+    height: auto;
+    /* margin: auto; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .abdulaziz .reklama img{
+    width: 90px;
+    height: 60%;
+}
+/* Reklama qismi tugadi */
+/* footers qismi Boshlandi */
+.container .abdulaziz .footers{
+    width: 100%;
+    height: auto;
+    background-color: #262626;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .abdulaziz .footers .content{
+    width: 70%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.container .abdulaziz .footers .content .searchs{
+    width: 100%;
+    height: 60px;
+    border: 2px solid #505050;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0px;
+}
+.container .abdulaziz .footers .content .searchs .btn2{
+    width: 40%;
+    height: auto;
+    border-radius: 50px;
+    background-color: #B0BCC2;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+.container .abdulaziz .footers .content .search_menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    margin: auto;
+    margin-top: 30px;
+    
+}
+.container .abdulaziz .footers .content .search_menu .menu1{
+    width: 190px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.container .abdulaziz .footers .content .search_menu .menu1 .us{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    height: 20px;
+}
+.container .abdulaziz .footers .content .search_menu .menu1 .menu2{
+    width: 100%;
+    height: 250px;
+}
+.container .abdulaziz .footers .content .search_menu .menu1 .menu2 ul{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.container .abdulaziz .footers .content .search_menu .menu1 .menu2 ul li a{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+/* Footers qismi Tugadi */
+/* Bottom qismi Boshlandi */
+.container .abdulaziz .bottom{
+    width: 100%;
+    height: auto;
+    background-color: #222121;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .abdulaziz .bottom .bottom_navbar{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .abdulaziz .bottom .bottom_navbar ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container .abdulaziz .bottom .bottom_navbar ul li a{
+text-transform: uppercase;
+color:#9F9FA0;
+font-size: 14px;
+
+}
+.container .abdulaziz .bottom .bottom_navbar .text_box{
+    width: 80%;
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .abdulaziz .bottom .bottom_navbar .text_box .all{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #7B7B7B;
+}
+.container .abdulaziz .bottom .bottom_navbar .text_box .all a{
+    color: blue;
+}
